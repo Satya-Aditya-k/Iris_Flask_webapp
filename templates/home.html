@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Prediction</title>
+    <style>
+        h5 {
+    color: #fff;
+    font-weight: 400;
+    background: #6DD55D;
+    width: auto;
+    font-size: 20px;
+    line-height: 1;
+    margin: 10px 10px 30px 0px;
+    padding: 14px;
+    border-left: 10px solid #6DD55D;
+    box-shadow: 4px 2px 15px 0px rgb(199 199 199);
+    text-align: center;
+}
+        .container {
+  width: 500px;
+  clear: both;
+}
+
+.container input {
+  width: 75%;
+  clear: both;
+}
+        p.double {border-style: double;}
+        h1 {text-align: center;}
+        div {
+            
+         
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right:auto;
+  margin-left: auto;
+  background-color: lightblue;
+
+}
+      }
+      label {
+        display: inline-block;
+        width: 50px;
+        color: #777777;
+      }
+      input {
+        padding: 5px 10px;
+      }
+    .button {
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    </style>
+    
+</head>
+<h5>Iris Flower Species Predictor</h5>
+
+<body>
+
+    <div class="container">
+        <form action="prediction" method="post" style="text-align: center; ">
+              <div>
+              <label for="Sepal Length">SepalLength(Cm):</label>
+              <input type="number" class="form-control" name="slength" id="slength" value="" required placeholder="Number between 4 and 8" min="4" max="8" step="0.1" ><br />
+              </div>
+              <div>
+              <label for="Sepal Width">SepalWidth(Cm): </label>
+              <input type="number" class="form-control" name="swidth" id="swidth" value="" required placeholder="Number between 2 and 5" min="2" max="5" step="0.1"><br />
+              </div>
+              <div>
+              <label for="Petal Length">PetalLength(Cm): </label>
+              <input type="number" class="form-control" name="plength" id="plength" value="" required placeholder="Number between 0 and 7" min="0" max="7" step="0.1"><br />
+              </div>
+              <div>
+              <label for="Petal Width">PetalWidth(Cm): </label>
+              <input type="number" class="form-control" name="pwidth" id="pwidth" value="" required placeholder="Number between 0 and 3" min="0" max="3" step="0.1"><br />
+              </div>
+              <button class="button" type="submit" >Predict</button>
+        </form>
+    </div>
+
+</body>
+</html>
